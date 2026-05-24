@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf‐8" />
+    <script>
+
+
+        function fentrada_parque() {
+            let edad_persona = parseInt(document.getElementById("edad_persona").value);
+            let edad_acompañante = parseInt(document.getElementById("edad_acompañante").value);
+            let tieneAutorizacion = document.getElementById("checkboxAutorizacion").checked;
+
+         
+                if (edad_persona < 5) 
+                { alert(" Eres menor de 5 años, no puedes ingresar"); }
+                
+                else if (edad_persona >= 5 && edad_persona <= 12) {
+                    if (edad_acompañante > 18)
+                { alert("Tienes mas de 5 años y menos de 12 años, Y tu acompañante es mayor de 18 años"); }
+                    else
+                { alert("Tienes mas de 5 años y menos de 12 años, pero necesitas un acompañante mayor de 18 años"); }
+                
+                }
+
+                else if (edad_persona > 12 && edad_persona <= 60) 
+                { alert(" Tienes mas de 12 años y menos de 60 años, puedes ingresar"); }
+            
+
+                else if (edad_persona > 60) {
+                if (tieneAutorizacion) 
+                { alert("Tiene mas de 60 años, y está autorizado para ingresar"); }
+                else
+                { alert("Tiene mas de 60 años pero no esta autorizado para ingresar"); }
+                }
+                
+        }
+
+    </script>
+</head>
+
+<body>
+    <br><br>
+    <p>Edad de la persona</p>
+    <input type="number" id="edad_persona" />
+    <br><br>
+    <p>Edad del acompañante</p>
+    <input type="number" id="edad_acompañante" />
+    <br><br>
+    <p>Autorización</p>
+    <input type="checkbox" id="checkboxAutorizacion" />
+    <br><br>
+    <input type="button" value="Entrada_parque" onclick="fentrada_parque()" />
+
+</body>
+
+</html>

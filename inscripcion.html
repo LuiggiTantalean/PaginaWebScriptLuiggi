@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="css/1estilos.css">
+</head>
+
+<body class="formulario_pagina">
+    <header class="cabecera_principal">
+        <h1>Formulario para Viaje</h1>
+        <nav class="navegacion_principal">
+            <ul class="menu_enlaces">
+                <li><a href="introduccion.html">Introducción</a></li>
+                <li><a href="maravillas.html">Maravillas</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="inscripcion.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br><br>
+        <form class="form2">
+            <h2 class="formulario">FORMULARIO DE VIAJE</h2>
+            <br>
+            <fieldset class="fieldset2">
+                <legend>Datos personales</legend>
+                <table>
+                    <tr>
+                        <td class="td2">Nombre:</td>
+                        <td class="td2"><input type="text" minlength="2" required></td>
+                        <td class="td2">Apellidos:</td>
+                        <td class="td2"><input type="text" minlength="2" required></td>
+
+                    </tr>
+                    <tr>
+                        <td class="td2">Teléfono:</td>
+                        <td class="td2"><input type="tel" pattern="[0-9]{9}" placeholder="9 dígitos"></td>
+                        <td class="td2">Fecha de nacimiento:</td>
+                        <td class="td2"><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="td2">DNI / NIE:</td>
+                        <td class="td2"><input type="tel" pattern="[0-8]{8}" placeholder="8 dígitos"></td>
+                        <td class="td2">Pasaporte:</td>
+                        <td class="td2"><input type="tel" pattern="[0-9]{9}" placeholder="9 dígitos"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset class="fieldset2">
+                <legend>Lugar de Destino</legend>
+                <select name="Destino Turistico">
+                    <option value="">-- Selecciona un destino --</option>
+                    <option value="1DAM">España</option>
+                    <option value="1ASIR">Italia</option>
+                    <option value="1SMYR">Francia</option>
+                    <option value="2DAM">Brasil</option>
+                    <option value="2ASIR">Perú</option>
+                    <option value="2SMYR">Argentina</option>
+                    <option value="2SMYR">Mexico</option>
+                    <option value="2SMYR">Colombia</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="fieldset2">
+                <legend>Motivo</legend>
+                <table>
+                    <tr>
+                        <td class="td2"><input type="radio" name="actividad" id="deporte"> <label
+                                for="deporte">Turismo</label></td>
+                        <td class="td2"><input type="radio" name="actividad" id="musica"> <label
+                                for="musica">Trabajo</label>
+                        </td>
+                        <td class="td2"><input type="radio" name="actividad" id="tecnologia"> <label
+                                for="tecnologia">Vacaciones</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+            <fieldset class="fieldset2">
+                <legend>Edad Pasajero</legend>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="vertical-align: middle;">
+                        <td class="td2" style="width: 25%; padding: 8px 5px;">Edad del pasajero:</td>
+                        <td class="td2" style="width: 25%; padding: 8px 5px;"><input type="number" id="edad_persona" onblur="fentrada_parque()" style="width: 90%;"></td>
+                        <td class="td2" style="width: 25%; padding: 8px 5px;">Edad del acompañante:</td>
+                        <td class="td2" style="width: 25%; padding: 8px 5px;"><input type="number" id="edad_acompañante" onblur="fentrada_parque()" style="width: 90%;"></td>
+                    </tr>
+                    <tr style="vertical-align: middle;">
+                        <td class="td2" style="padding: 8px 5px;">¿Tiene autorización? (> 60 años):</td>
+                        <td class="td2" colspan="3" style="padding: 8px 5px;"><input type="checkbox" id="checkboxAutorizacion" onchange="fentrada_parque()" /> Sí</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset class="fieldset2">
+                <legend>Cantidad de Pasajes y Maletas</legend>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <div style="margin-top: 15px; text-align: center;">
+                                <span style="font-size: 18px;">Total de Billetes Solicitados: </span>
+                                <label id="numero" class="inscripcion1">0</label>
+                                <br><br>
+                                <input type="button" value="Aumentar (+)" onclick="fincrementar()">
+                                <input type="button" value="Disminuir (-)" onclick="fdecrementar()">
+                                <input type="button" value="Reiniciar" onclick="fresetear()">
+                            </div>
+                            
+                            <div class="inscripcion2" style="text-align: center; margin-top: 15px;">
+                                <label for="maletas_por_persona">Maletas por pasajero: </label>
+                                <input type="number" id="maletas_por_persona" value="2" min="1" style="width: 50px; text-align: center; padding: 3px;">
+                                <br><br><br>
+                                <input type="button" value="Simular Distribución de Equipaje" onclick="fcalcularTablaMultiplicarBilletes()">
+                                <p id="parrafo_multiplicar_resultado" style="font-weight: bold; margin-top: 10px;">Introduce billetes y pulsa simular...</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+
+            <fieldset class="fieldset2">
+                <legend>Nivel de interés</legend>
+                <div class="centro">
+                    1 <input type="range" min="1" max="10" step="1"> 10
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset2">
+                <legend>Disponibilidad</legend>
+                <table>
+                    <tr>
+                        <td class="td2"><input type="checkbox"> Lunes</td>
+                        <td class="td2"><input type="checkbox"> Martes</td>
+                        <td class="td2"><input type="checkbox"> Miércoles</td>
+                        <td class="td2"><input type="checkbox"> Jueves</td>
+                        <td class="td2"><input type="checkbox"> Viernes</td>
+                        <td class="td2"><input type="checkbox"> Sabado</td>
+                        <td class="td2"><input type="checkbox"> Domingo</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset class="fieldset2">
+                <legend>Fecha del viaje</legend>
+                <table>
+                    <tr>
+                        <td class="td2">Fecha inicio:</td>
+                        <td class="td2"><input type="date"></td>
+                        <td class="td2">Fecha fin:</td>
+                        <td class="td2"><input type="date"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+
+
+            <fieldset class="fieldset2">
+                <legend>Comentarios</legend>
+                <textarea maxlength="200" placeholder="Máximo 200 caracteres"></textarea>
+            </fieldset>
+            <br>
+            <input type="reset" value="Borrar" />
+            <br><br>
+            <input class="Enviar" type="submit" />
+            <br><br>
+        </form>
+    </main>
+    <script src="script/script_web.js"></script>
+</body>
+
+</html>

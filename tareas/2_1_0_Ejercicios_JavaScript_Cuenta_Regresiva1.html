@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta content="text/html; charset=utf‐8" />
+    
+    
+    <script>
+
+        function fparrafo(){
+            let parrafo = parseInt(document.getElementById ("numero").value);
+            document.getElementById ("parrafo").textContent = parrafo;
+            console.log(parrafo);
+            for (i=parrafo; i>=1; i--){
+                console.log (i);
+                document.write (i);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <label>introduce numero para la cuenta atras</label>
+    <input type="number" name="numero" id="numero" />
+    <input type="button" value="boton" onclick="fparrafo()" />
+    <p id="parrafo">resultado de la cuenta atras</p>
+
+</body>
+</html>
+
+
+

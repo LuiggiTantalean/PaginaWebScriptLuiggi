@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf‐8" />
+    <script>
+
+        function colorletra() {
+            let letra = parseInt(document.getElementById("numero").textContent);
+            console.log(letra)
+            if (letra > 0) {
+                document.getElementById("numero").style.color = "black";
+            }
+            else
+                if (letra < 0) {
+                     document.getElementById("numero").style.color = "black";
+                }
+                else {
+                     document.getElementById("numero").style.color = "black";
+                }
+
+        }
+
+
+        function fincrementar() {
+            let incrementar = parseInt(document.getElementById("numero").textContent);
+            document.getElementById("numero").textContent = incrementar + 1;
+           colorletra();
+
+        }
+
+
+        function fdecrementar() {
+            let decrementar = parseInt(document.getElementById("numero").textContent);
+            document.getElementById("numero").textContent = decrementar - 1;
+            colorletra();
+
+        }
+
+
+        function fresetear() {
+            let resetear = parseInt(document.getElementById("numero").textContent);
+            document.getElementById("numero").textContent = resetear = 0;
+            colorletra();
+
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    <br>
+    <label id="numero">0</label>
+    <br>
+    <input type="button" value="incrementar" id="incrementar" onclick="fincrementar()" />
+    <input type="button" value="decrementar" id="decrementar" onclick="fdecrementar()" />
+    <input type="reset" value="resetear" id="resetear" onclick="fresetear()" />
+
+</body>
+
+</html>

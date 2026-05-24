@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function focultarimagen() {
+            let imagenes = document.getElementsByTagName('img');
+            let imagenes1 = imagenes.length;
+            for (i = 0; i < imagenes1; i++) {
+                imagenes[i].style.visibility = 'hidden';
+            }
+        }
+
+        function fverimagen() {
+            let imagenes = document.getElementsByTagName('img');
+            let imagenes1 = imagenes.length;
+            for (i = 0; i < imagenes1; i++) {
+                imagenes[i].style.visibility = 'visible';
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <img src="imagen/messi.png" width="300" height="250">
+    <img src="imagen/messi1.png" width="300" height="250">
+    <img src="imagen/messi2.png" width="300" height="250">
+
+    <input type="button" name="ocultar_imagen" value="ocultar_imagen" onclick="focultarimagen()"></input>
+    <input type="button" name="visualizar_imagen" value="visualizar_imagen" onclick="fverimagen()"></input>
+</body>
+
+</html>

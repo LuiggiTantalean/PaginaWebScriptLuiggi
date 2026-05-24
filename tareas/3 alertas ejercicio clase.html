@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function recogervaloresForm(){
+            let rellena = document.getElementsByName('cuadro1');
+            for (i = 0; i < rellena.length; i++){
+                alert(rellena[i].value);
+            }
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <form name="formulario">
+        <input type="text" size="10" name="cuadro1" value="" class="cuadroclass" >
+        <input type="text" size="10" name="cuadro1" value="" class="cuadroclass" >
+        <input type="text" size="10" name="cuadro1" value="" class="cuadroclass" >
+        <input type="button" name="btnenviar" onclick="recogervaloresForm()" value="Enviar"></input>
+    </form>
+</body>
+</html> 

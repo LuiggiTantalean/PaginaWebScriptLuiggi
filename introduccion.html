@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción</title>
+    <link rel="stylesheet" href="css/1estilos.css">
+</head>
+
+<body class="introduccion_pagina">
+    <header class="cabecera_principal">
+        <h1>Destinos Turisticos</h1>
+        <nav class="navegacion_principal">
+            <ul class="menu_enlaces">
+                <li><a href="introduccion.html">Introducción</a></li>
+                <li><a href="maravillas.html">Maravillas</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="inscripcion.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="introduccion1">
+        <br>
+        <div class="introduccion2">Hora Local: <span id="reloj_intro" class="introduccion3">00:00:00</span>
+        </div>
+        <br><br><br>
+
+        <div style="display: inline-block;">
+            <input type="button" value="Saludar al viajero" onclick="fsaludoIntro()">
+            <input type="button" value="Cambiar Color de Fondo" onclick="fcambiarFondoIntro()">
+        </div>
+        <br><br>
+        <div>
+            <input type="text" id="nombre_intro" placeholder="Escribe el color, tu nombre o un mensaje" style="padding: 4px; 
+    text-align: center; width: 260px;">
+        </div>
+        <div style="margin-top: 15px;">
+            <br>
+            <p id="parrafo_dinamico_intro">Escribe aqui cualquier mensaje</p>
+            <input type="button" value="Cambiar Mensaje" onclick="fcambiarTextoIntro()">
+            <input type="button" value="Cuenta Atrás" onclick="fcuentaAtrasIntro()">
+            <input type="button" value="Valoración" onclick="fpiramideIntro()">
+        </div>
+        <br>
+        <div id="resultado_bloque_intro" class="introduccion4">
+        </div>
+    </div>
+
+
+
+
+    <div class="indice">
+        <aside class="indice_lateral">
+            <h3>Índice</h3>
+            <ul>
+                <li><a href="#definicion">¿Qué son las 7 maravillas del mundo?</a></li>
+            </ul>
+            <ul class="sub_lista">
+                <li><a href="#jerarquias">Jerarquías Geográficas</a></li>
+                <li><a href="#cronologia">Cronología Unesco</a></li>
+                <li><a href="#informacion">Curiosidades de Construcción y Diseño</a></li>
+                <li><a href="#glosario">Glosario de Términos</a></li>
+                <li><a href="#enlaces">Enlaces de Interés</a></li>
+                <li><a href="#tareas">Ejercicios de Clase</a></li>
+            </ul>
+            <br>
+        </aside>
+
+
+
+        <main class="contenido_con_margen">
+            <br>
+            <h1 class="titulo_introduccion" id="definicion">¿QUÉ SON LAS 7 MARAVILLAS DEL MUNDO?</h1>
+            <br>
+            <p class="maravillas">
+                Las 7 Maravillas del Mundo Moderno elegidas por un proceso de votación mundial en el año 2007,
+                organizado por la fundación suiza New 7 Wonders es el mayor reconocimiento al impacto estético,
+                cultural e histórico de las creaciones en la historia de la humanidad.
+            </p>
+            <p class="maravillas">
+                Todo aquel que tenga el privilegio de visitar por lo menos alguna, conecta con el legado que dejaron
+                antiguas civilizaciones a través de espectaculares hazañas y singular arquitectura. Sin duda,
+                cada una de ellas tiene su esencia, desde altas estatuas en colinas hasta colosales edificaciones,
+                estos sitios no dejan indiferente a nadie.
+            </p>
+
+            <br><br>
+
+            <div class="imagen_mapa">
+                <img src="Imagenes_web/mapa.png" alt="mexico" width="600" height="350">
+            </div>
+
+            <br><br><br><br><br>
+
+            <hr>
+            <br><br><br>
+            <section id="jerarquias">
+                <h2>Jerarquías Geográficas</h2>
+                <br>
+                <fieldset class="bordes_cuadros">
+                    <ol class="cuadrado">
+                        <li>Continente Americano (América Latina)
+                            <ul>
+                                <li>México: Pirámide de Kukulcán en la península de Yucatán</li>
+                                <li>Perú: Ciudadela Inca en la región de Cusco</li>
+                                <li>Brasil: Estatua del Corcovado en Río de Janeiro</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </fieldset>
+                <br>
+
+                <fieldset class="bordes_cuadros">
+                    <ol class="cuadrado">
+                        <li>Continente Europeo (Cuenca del Mediterráneo)
+                            <ul>
+                                <li>Italia: Anfiteatro Flavio en el Centro de Roma</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </fieldset>
+                <br>
+
+                <fieldset class="bordes_cuadros">
+                    <ol class="cuadrado">
+                        <li>Continente Asiático (Oriente y Extremo Oriente)
+                            <ul>
+                                <li>India: Mausoleo ee Mármol en la Ciudad de Agra</li>
+                                <li>China: Sistema Defensivo en la frontera Norte</li>
+                                <li>Jordania: Ciudad Tallada en el Desierto de Arabia</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </fieldset>
+            </section>
+
+            <br><br><br><br><br>
+
+            <section id="cronologia">
+                <h2>Cronología de Reconocimiento UNESCO</h2>
+                <p class="maravillas">
+                    La Cronología de Reconocimiento UNESCO es el registro ordenado y
+                    temporal de los años en los que diversos monumentos o sitios naturales
+                    han sido integrados oficialmente en la Lista del Patrimonio de la Humanidad.
+                </p>
+                <p class="maravillas">
+                    Esta cronología no solo marca la fecha de protección legal de un sitio, sino que
+                    también refleja la evolución del interés global por conservar el legado
+                    histórico, arquitectónico y cultural de las civilizaciones antiguas. En el
+                    contexto de las maravillas del mundo, permite entender cómo cada una fue
+                    adquiriendo su estatus de "valor universal excepcional" ante la comunidad
+                    internacional.
+                </p>
+                <br>
+                <fieldset class="bordes_cuadros">
+                    <table>
+                        <tr>
+                            <ol>
+                                <li>1980: El <strong>Coliseo Romano</strong> (Italia) es incluido como parte del Centro
+                                    Histórico de Roma.
+                                </li><br>
+                                <li>1983: <strong>Machu Picchu</strong> (Perú) y el <strong>Taj Mahal</strong> (India)
+                                    reciben
+                                    el título el
+                                    mismo año.</li><br>
+                                <li>1985: <strong>Petra</strong> (Jordania) es reconocida por su incalculable valor
+                                    arqueológico.</li><br>
+                                <li>1987: La <strong>Gran Muralla</strong> (China) es declarada patrimonio mundial.</li>
+                                <br>
+                                <li>1988: <strong>Chichén Itzá</strong> (México) entra oficialmente en la lista de
+                                    protección.
+                                </li><br>
+                                <li>2007: El <strong>Cristo Redentor</strong> (Brasil) es el más reciente, dentro del
+                                    Parque
+                                    Nacional de la
+                                    Tijuca.</li><br>
+                                <li>2007: Se realiza la gala en Lisboa donde las 7 son elegidas como las <em>Nuevas
+                                        Maravillas
+                                        del Mundo
+                                        Moderno</em>.</li>
+                            </ol>
+
+                    </table>
+                </fieldset>
+            </section>
+            <br><br>
+
+            <div class="imagen_mapa">
+                <img src="Imagenes_web/unesco.png" alt="mexico" width="600" height="350">
+            </div>
+            <br><br>
+
+
+
+            <section id="informacion">
+                <h2>Curiosidades de Construcción y Diseño</h2>
+                <br>
+                <fieldset class="bordes_cuadros">
+                    <table>
+                        <ul class="cuadrado">
+                            <li class="justificado_maravillas"><strong>Chichén Itzá:</strong> El diseño de la pirámide
+                                permite que, al aplaudir
+                                frente a la
+                                escalinata,
+                                el
+                                eco imite exactamente el canto del pájaro <strong>quetzal</strong>.</li>
+                            <br>
+                            <li class="justificado_maravillas"><strong>El Coliseo:</strong> Contaba con un complejo
+                                sistema de ascensores y
+                                trampillas
+                                mecánicas para
+                                hacer
+                                aparecer <strong>leones y gladiadores</strong> por sorpresa en la arena.</li>
+                            <br>
+                            <li class="justificado_maravillas"><strong>Machu Picchu:</strong> Fue construida con una
+                                técnica llamada
+                                <em>ashlar</em>, donde
+                                las piedras
+                                encajan tan perfecto que no se utilizó <strong>ningún tipo de pegamento</strong> o
+                                mortero.
+                            </li>
+                            <br>
+                            <li class="justificado_maravillas"><strong>La Gran Muralla:</strong> Durante la dinastía
+                                Ming, se utilizó <strong>arroz
+                                    pegajoso</strong>
+                                mezclado con cal para unir los ladrillos, creando una estructura casi
+                                indestructible.</li>
+                            <br>
+                            <li class="justificado_maravillas"><strong>Petra:</strong> A diferencia de casi cualquier
+                                otra ciudad antigua, Petra no
+                                fue
+                                construida con
+                                ladrillos, sino que fue <strong>literalmente tallada</strong> de arriba hacia abajo
+                                en la
+                                roca sólida.
+                            </li>
+                            <br>
+                            <li class="justificado_maravillas"><strong>Taj Mahal:</strong> Se emplearon más de
+                                <strong>1,000 elefantes</strong>
+                                para
+                                transportar el
+                                mármol
+                                blanco y las piedras preciosas desde diferentes puntos de Asia.
+                            </li>
+                            <br>
+                            <li class="justificado_maravillas"><strong>Cristo Redentor:</strong> La capa exterior de la
+                                estatua está compuesta por
+                                <strong>6 millones
+                                    de
+                                    azulejos</strong> de esteatita, colocados a mano por mujeres voluntarias de la
+                                época.
+                            </li>
+                        </ul>
+
+                    </table>
+                </fieldset>
+            </section>
+            <br><br><br>
+
+            <section id="glosario">
+                <h2>Glosario de Términos</h2>
+                <br>
+                <fieldset class="bordes_cuadros">
+                    <legend class="definiciones">Definiciones</legend>
+                    <table>
+                        <dl>
+                            <dt>Hipogeo:</dt>
+                            <dd>Sistema de túneles bajo el Coliseo donde esperaban gladiadores y animales.</dd>
+                            <br>
+                            <dt>Siq:</dt>
+                            <dd>Estrecho cañón de entrada de 1.2 kilómetros que conduce al Tesoro de Petra.</dd>
+                            <br>
+                            <dt>Esteatita:</dt>
+                            <dd>Piedra jabón utilizada para cubrir el Cristo Redentor debido a su resistencia al
+                                clima.</dd>
+                            <br>
+                            <dt>Intihuatana:</dt>
+                            <dd>Piedra ritual en Machu Picchu usada para medir el tiempo y las estaciones.</dd>
+
+                        </dl>
+
+                    </table>
+                </fieldset>
+            </section>
+            <br><br><br><br><br>
+
+            <hr>
+            <br><br><br>
+
+            <section id="enlaces">
+                <h2>Enlaces de Interés</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.new7wonders.com/" target="_blank"><strong>New7Wonders</strong></a>
+                        - Página oficial de la fundación que organizó la votación mundial.
+                    </li>
+                    <li>
+                        <a href="https://whc.unesco.org/es/list/" target="_blank"><strong>UNESCO Patrimonio
+                                Mundial</strong></a>
+                        - Listado oficial de monumentos protegidos por las Naciones Unidas.
+                    </li>
+                    <li>
+                        <a href="https://www.nationalgeographic.com.es/mundo-ng/cuanto-sabes-sobre-machu-picchu_18931"
+                            target="_blank"><strong>National Geographic</strong></a>
+                        - ¿Cuánto sabes sobre Machu Picchu?.
+                    </li>
+                    <li>
+                        <a href="https://elpais.com/buscador/maravillas%20del%20mundo/" target="_blank"><strong>El
+                                País - Viajes</strong></a>
+                        - Artículos y noticias actualizadas sobre el turismo en estos destinos.
+                    </li>
+                    <li>
+                        <a href="https://elordenmundial.com/mapas-y-graficos/siete-maravillas-mundo-moderno/"
+                            target="_blank"><strong>El Orden Mundial</strong></a>
+                        - Las siete maravillas del mundo moderno.
+                    </li>
+                </ul>
+                <br><br>
+            </section>
+            <br><br>
+            <hr>
+            <section id="tareas">
+                <br><br>
+                <h2>Ejercicios de Clase</h2>
+                <br>
+                <ul>
+                    <li><a href="tareas/1_0_Actividades_Funciones_Javascript.html"
+                            target="_blank">1_0_Actividades_Funciones_Javascript</a></li>
+                    <li><a href="tareas/1_1_Ejercicios_JavaScript_5Mejorado.html"
+                            target="_blank">1_1_Ejercicios_JavaScript_5Mejorado</a></li>
+                    <li><a href="tareas/1_2_Ejercicios_JavaScript_5MejoradoLocalStorage.html"
+                            target="_blank">1_2_Ejercicios_JavaScript_5MejoradoLocalStorage</a></li>
+                    <li><a href="tareas/1_3_0_Ejercicios_JavaScript_If_ASIR_2al4.html"
+                            target="_blank">1_3_0_Ejercicios_JavaScript_If_ASIR_2al4</a></li>
+                    <li><a href="tareas/1_3_1_Ejercicio_JavaScript_ParqueAtracciones_ASIR.html"
+                            target="_blank">1_3_1_Ejercicio_JavaScript_ParqueAtracciones_ASIR</a></li>
+                    <li><a href="tareas/2_1_0_Ejercicios_JavaScript_Cuenta_Regresiva.html"
+                            target="_blank">2_1_0_Ejercicios_JavaScript_Cuenta_Regresiva</a></li>
+                    <li><a href="tareas/2_1_0_Ejercicios_JavaScript_Cuenta_Regresiva1.html"
+                            target="_blank">2_1_0_Ejercicios_JavaScript_Cuenta_Regresiva1</a></li>
+                    <li><a href="tareas/2_1_0_Ejercicios_JavaScript_PiramideAsteriscos.html"
+                            target="_blank">2_1_0_Ejercicios_JavaScript_PiramideAsteriscos</a></li>
+                    <li><a href="tareas/2_1_0_Ejercicios_JavaScript_TablaMultiplicar.html"
+                            target="_blank">2_1_0_Ejercicios_JavaScript_TablaMultiplicar</a></li>
+                    <li><a href="tareas/3 alertas ejercicio clase.html" target="_blank">3 alertas ejercicio clase</a>
+                    </li>
+                    <li><a href="tareas/4_0_Ejecricio_Imagenes_ocultar.html"
+                            target="_blank">4_0_Ejecricio_Imagenes_ocultar</a></li>
+                    <li><a href="tareas/4_1_Ejercicio_Imagenes_Cambiando.html"
+                            target="_blank">4_1_Ejercicio_Imagenes_Cambiando</a></li>
+                    <li><a href="tareas/5_Ejercicio_Javascript_Reloj.html"
+                            target="_blank">5_Ejercicio_Javascript_Reloj</a></li>
+                    <li><a href="tareas/Añadir y eliminar frutas ejercicio clase.html" target="_blank">Añadir y eliminar
+                            frutas ejercicio clase</a></li>
+                </ul>
+            </section>
+            <br>
+        </main>
+    </div>
+    <footer class="pie_pagina">
+        <div class="contenido_footer">
+            <p><strong>Destinos Turisticos 2026</strong></p>
+            <p>Pagina web Luiggi Lenguaje de Marcas</p>
+            <p>Contacto: luiggi123456789@gmail.com</p>
+        </div>
+    </footer>
+
+
+    <script src="script/script_web.js"></script>
+
+</body>
+
+</html>

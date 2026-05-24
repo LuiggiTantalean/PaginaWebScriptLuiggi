@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf‐8" />
+    <script>
+
+        let frutas = ["manzanas", "naranjas", "papaya"];
+        console.log(frutas[0]);
+        for (i = 0; i < frutas.length; i++) {
+            console.log(frutas[i]);
+        }
+
+        function fanadir() {
+            let nuevaf = document.getElementById("fruta").value;
+            frutas.push(nuevaf);
+
+        }
+
+        function fvisualizar() {
+            for (i = 0; i < frutas.length; i++) {
+                console.log(frutas[i]);
+            }
+        }
+
+        function feliminar() {
+            frutas.pop();
+
+        }
+
+
+        function feliminarposicion() {
+            let posicionf = document.getElementById("fruta").value;
+            frutas.splice(posicionf, 1);
+
+        }
+
+        function fbuscarposicion() {
+            let buscarf = document.getElementById("fruta").value;
+            let posicion = frutas.indexOf(buscarf);
+            console.log("posicion " + posicion);
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" name="fruta" id="fruta" />
+    <input type="button" value="añadir fruta" onclick="fanadir()" />
+    <input type="button" value="visualizar frutas" onclick="fvisualizar()" />
+    <input type="button" value="eliminar ultima fruta" onclick="feliminar()" />
+    <input type="button" value="eliminar por posicion" onclick="feliminarposicion()" />
+    <input type="button" value="buscar posicion" onclick="fbuscarposicion()" />
+    <input type="button" value="eliminar por nombre" onclick="feliminarnombre()" />
+
+</body>
+
+</html>

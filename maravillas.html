@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maravillas del Mundo</title>
+    <link rel="stylesheet" href="css/1estilos.css">
+</head>
+
+<body class="maravillas_pagina">
+    <header class="cabecera_principal">
+        <h1>Las 7 Maravillas del Mundo</h1>
+        <nav class="navegacion_principal">
+            <ul class="menu_enlaces">
+                <li><a href="introduccion.html">Introducción</a></li>
+                <li><a href="maravillas.html">Maravillas</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="inscripcion.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="maravillas1">
+        <h3>Ocultar y Visualizar las Imagenes</h3>
+
+        <input type="button" value="Ocultar Fotos de Maravillas" onclick="focultarFotosMaravillas()">
+        <input type="button" value="Mostrar Fotos de Maravillas" onclick="fverFotosMaravillas()">
+        <div style="margin: 15px 0;">
+            <br>
+            <input type="button" value="Banderas de las 7 Maravillas" onclick="fcambiarFotoCarrusel()">
+            <div id="contenedor_carrusel" class="carrusel_fotos_maravilla" style="margin-top: 10px;">
+                <img id="foto_rotativa" src="Imagenes_web/mexicobandera.png" alt="Bandera México" width="200"
+                    height="140" class="carrusel_imagenes">
+            </div>
+            <br>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <label>Comparar Alturas de los Monumentos (Metros): </label>
+            <input type="number" id="altura_m1" placeholder="Monumento 1" style="width:100px; text-align: center;">
+            <input type="number" id="altura_m2" placeholder="Monumento 2" style="width:100px; text-align: center;">
+            <input type="button" value="Calcular Mayor" onclick="fcompararAlturasMaravillas()">
+        </div>
+    </div>
+
+
+    <div class="indice">
+        <aside class="indice_lateral">
+            <h3>Maravillas</h3>
+            <ul>
+                <li><a href="#las_siete_maravillas">I. Las 7 Maravillas</a></li>
+            </ul>
+            <ul class="sub_lista">
+                <li><a href="#mexico">Chichén Itzá</a></li>
+                <li><a href="#italia">Coliseo Romano</a></li>
+                <li><a href="#peru">Machu Picchu</a></li>
+                <li><a href="#china">La Gran Muralla</a></li>
+                <li><a href="#jordania">Petra</a></li>
+                <li><a href="#india">El Taj Mahal</a></li>
+                <li><a href="#brasil">El Cristo Redentor</a></li>
+            </ul>
+            <ul>
+                <li><a href="#otros_destinos_turisticos">II. Otros Destinos Turisticos</a></li>
+            </ul>
+
+            <br><hr><br>
+            <div class="maravillas_indice">
+                <h4 class="maravillas_indice1">Medidas de los Monumentos</h4>
+                <ul class="maravillas_indice2">
+                    <li><strong>Chichén Itzá:</strong> 30 m altura</li>
+                    <li><strong>Coliseo Romano:</strong> 48 m alto / 189 m largo</li>
+                    <li><strong>Machu Picchu:</strong> 2,430 m altitud</li>
+                    <li><strong>Gran Muralla:</strong> 21,196 km largo</li>
+                    <li><strong>Petra:</strong> 40 m altura (El Tesoro)</li>
+                    <li><strong>Taj Mahal:</strong> 73 m altura</li>
+                    <li><strong>Cristo Redentor:</strong> 38 m altura total</li>
+                    <li><strong>Isla de Pascua:</strong> 4 m altura (promedio Moai)</li>
+                    <li><strong>Caño Cristales:</strong> 100 km longitud</li>
+                    <li><strong>P. Hitsujiyama:</strong> 300,000 m² de superficie</li>
+                    <li><strong>Pozo de Darvaza:</strong> 69 m diámetro / 30 m profundidad</li>
+                    <li><strong>Stonehenge:</strong> 4.1 m altura (bloques)</li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <main class="contenido_con_margen">
+            <h2 id="las_siete_maravillas">I. Las 7 Maravillas del Mundo</h2>
+            <br>
+            <section id="mexico" class="articulo_maravilla">
+                <div class="imagenesizq">
+                    <img src="Imagenes_web/mexico.jpg" alt="mexico" width="400" height="250">
+                </div>
+
+                <h3>1. Chichén Itzá (México)</h3>
+                <p class="maravillas">
+                    Esta ciudad maya es mundialmente famosa por la pirámide de <strong>Kukulcán</strong>, la
+                    cual
+                    destaca por su
+                    <em>precisión astronómica</em>,
+                    donde la luz del sol crea el efecto de una serpiente bajando por sus escalones durante
+                    los
+                    equinoccios.
+                    Desde
+                    que fue nombrada una de las
+                    nuevas siete maravillas en el <strong>año 2007</strong>, el flujo de visitantes
+                    internacionales
+                    ha crecido
+                    de
+                    forma constante, consolidándose
+                    como la zona arqueológica más visitada de todo <strong>México</strong> con más de
+                    <em>2.5
+                        millones de
+                        turistas</em> anualmente.
+                </p>
+
+                <p class="maravillas">
+                    A lo largo de los años, este destino no solo ha mantenido su valor histórico, sino que
+                    ha
+                    generado un
+                    impacto
+                    económico <strong>multimillonario</strong> para la región de Yucatán.
+                    A pesar del paso del tiempo y los fenómenos climáticos, sus estructuras se conservan en
+                    un
+                    estado
+                    <em>impresionante</em>, permitiendo que viajeros de todo el mundo
+                    sigan admirando de cerca el avanzado legado científico y cultural de la
+                    <strong>civilización
+                        maya</strong>.
+                </p>
+            </section>
+
+            <br><br><br><br>
+
+            <section id="italia" class="articulo_maravilla">
+                <div class="imagenesder">
+                    <img src="Imagenes_web/italia.jpeg" alt="italia" width="400" height="250">
+                </div>
+
+                <h3>2. El Coliseo Romano (Italia)</h3>
+                <p class="maravillas">
+                    El gran anfiteatro ubicado en el <strong>centro de Roma</strong> fue construido en el
+                    <em>siglo
+                        I</em> y
+                    servía
+                    como el escenario principal de <strong>combates de gladiadores</strong> y
+                    espectáculos públicos, simbolizando el máximo poder del <strong>Imperio Romano</strong>.
+                    En la
+                    actualidad,
+                    este
+                    monumento es un gigante del turismo europeo que alcanza picos de
+                    hasta <em>7 millones de visitantes</em> por año, convirtiéndose en el motor cultural y
+                    el icono
+                    más rentable
+                    de
+                    toda <strong>Italia</strong>.
+                </p>
+                <p class="maravillas">
+                    Históricamente, el Coliseo ha sobrevivido a grandes terremotos y al <em>expolio de
+                        materiales</em>, pero
+                    gracias
+                    a inversiones de <strong>decenas de millones de euros</strong> en su restauración,
+                    hoy luce más majestuoso que nunca. Es una parada <strong>obligatoria</strong> e
+                    <em>imprescindible</em> para
+                    cualquier viajero, ya que ofrece una ventana única a la ingeniería antigua y
+                    a la historia de una civilización que marcó el rumbo del mundo occidental.
+                </p>
+
+            </section>
+            <br><br><br><br>
+
+            <section id="peru" class="articulo_maravilla">
+                <div class="imagenesizq">
+                    <img src="Imagenes_web/peru.jpg" alt="peru" width="400" height="250">
+                </div>
+                <h3>3. Machu Picchu (Perú)</h3>
+                <p class="maravillas">
+                    Esta antigua ciudadela inca situada en los <strong>Andes Peruanos</strong> es una obra
+                    maestra
+                    de la
+                    <em>ingeniería y la
+                        arquitectura</em> que parece flotar entre las nubes. Desde su redescubrimiento
+                    científico en
+                    1911, se ha
+                    convertido en el
+                    destino más emblemático de <strong>Sudamérica</strong>, atrayendo a más de <em>1.5
+                        millones de
+                        turistas</em>
+                    anuales que
+                    buscan conectar con la energía espiritual del <strong>Imperio Inca</strong>.
+                </p>
+                <p class="maravillas">
+                    A lo largo de los siglos, el sitio ha resistido el paso del tiempo gracias a su avanzado
+                    sistema
+                    de
+                    <em>drenaje
+                        y
+                        terrazas</em> agrícolas que evitan la erosión de la montaña. Visitar este lugar es
+                    una
+                    experiencia
+                    <strong>inolvidable</strong>
+                    e <em>imprescindible</em>, ya que ofrece una panorámica espectacular de la cordillera y
+                    un
+                    testimonio vivo
+                    de
+                    una civilización
+                    que dominó las alturas con una precisión <strong>asombrosa</strong>.
+                </p>
+            </section>
+            <br><br><br><br>
+
+            <section id="china" class="articulo_maravilla">
+                <div class="imagenesder">
+                    <img src="Imagenes_web/china.png" alt="china" width="400" height="250">
+                </div>
+
+                <h3>4. La Gran Muralla (China)</h3>
+                <p class="maravillas">
+                    Esta colosal estructura de <strong>piedra y ladrillo</strong> serpentea a través de
+                    desiertos y
+                    montañas,
+                    habiendo sido construida
+                    originalmente para proteger la frontera norte del <em>Imperio Chino</em>. Con una
+                    extensión de
+                    miles de
+                    kilómetros,
+                    representa la <strong>resistencia y el poder</strong> de las antiguas dinastías, siendo
+                    hoy un
+                    fenómeno
+                    turístico que
+                    recibe a <em>decenas de millones de visitantes</em> que caminan por sus históricas
+                    almenas.
+                </p>
+                <p class="maravillas">
+                    Históricamente, la muralla ha servido no solo como defensa, sino como una ruta de
+                    <em>transporte
+                        y
+                        comunicación</em> vital para
+                    la antigua Ruta de la Seda. Es considerada una parada <strong>obligatoria</strong> para
+                    entender
+                    la magnitud
+                    de
+                    la mano de obra
+                    humana y la <em>visión estratégica</em> de una cultura que logró levantar la
+                    construcción más
+                    larga del
+                    mundo
+                    <strong>occidental
+                        y oriental</strong> por igual.
+                </p>
+            </section>
+
+
+
+            <br><br><br><br>
+
+            <section id="jordania" class="articulo_maravilla">
+                <div class="imagenesizq">
+                    <img src="Imagenes_web/jordania.jpg" alt="jordania" width="400" height="250">
+                </div>
+
+                <h3>5. Petra (Jordania)</h3>
+                <p class="maravillas">
+                    Conocida como la <strong>"Ciudad Rosa"</strong>, este enclave arqueológico fue excavado
+                    directamente en los
+                    <em>acantilados de
+                        arenisca</em> por los nabateos hace más de dos milenios. Su monumento más famoso, El
+                    Tesoro,
+                    simboliza
+                    la
+                    riqueza de una capital
+                    que controlaba las rutas comerciales, atrayendo hoy a más de <strong>un millón de
+                        personas</strong> anuales
+                    que
+                    se maravillan
+                    con sus fachadas talladas a <em>mano alzada</em>.
+                </p>
+                <p class="maravillas">
+                    El sitio ha sobrevivido a siglos de abandono y al efecto de las <em>tormentas de
+                        arena</em>,
+                    recuperando su
+                    esplendor gracias a
+                    los esfuerzos internacionales de conservación en <strong>Jordania</strong>. Recorrer el
+                    estrecho
+                    cañón del
+                    Siq
+                    es una
+                    aventura <strong>única</strong> e <em>imprescindible</em> para apreciar cómo la
+                    naturaleza y el
+                    arte humano
+                    se
+                    fusionaron para
+                    crear una de las ciudades más bellas de la <strong>antigüedad</strong>.
+                </p>
+            </section>
+            <br><br><br><br>
+
+            <section id="india" class="articulo_maravilla">
+                <div class="imagenesder">
+                    <img src="Imagenes_web/india.jpg" alt="india" width="400" height="250">
+                </div>
+
+
+                <h3>6. El Taj Mahal (India)</h3>
+                <p class="maravillas">
+                    Este majestuoso <strong>mausoleo de mármol</strong> ubicado en la ciudad de Agra fue
+                    erigido por
+                    orden del
+                    emperador Shah Jahan como
+                    el <em>monumento al amor</em> definitivo. Es el icono más representativo de la
+                    <strong>India</strong>,
+                    destacando por su simetría
+                    perfecta y una decoración que incluye <em>piedras preciosas</em> incrustadas, recibiendo
+                    la
+                    visita de unos
+                    <strong>8 millones de
+                        turistas</strong> de todo el mundo cada año.
+                </p>
+                <p class="maravillas">
+                    A lo largo de los años, el edificio ha requerido cuidados intensivos para proteger su
+                    <em>blancura
+                        característica</em> de la
+                    contaminación ambiental y el paso del tiempo. Contemplar su reflejo en los canales de
+                    agua es un
+                    momento
+                    <strong>mágico</strong>
+                    y <em>obligatorio</em>, ya que representa la cúspide de la arquitectura mogola y una
+                    historia de
+                    devoción
+                    que ha
+                    conmovido a
+                    la <strong>humanidad</strong> entera.
+                </p>
+            </section>
+            <br><br><br><br>
+
+            <section id="brasil" class="articulo_maravilla">
+                <div class="imagenesizq">
+                    <img src="Imagenes_web/brasil.jpg" alt="brasil" width="400" height="250">
+                </div>
+
+                <h3>7. El Cristo Redentor (Brasil)</h3>
+                <p class="maravillas">
+                    Esta imponente estatua de <strong>estilo Art Déco</strong> se alza sobre el cerro del
+                    Corcovado,
+                    abrazando
+                    simbólicamente a la
+                    ciudad de <strong>Río de Janeiro</strong> con sus brazos abiertos. Con 30 metros de
+                    altura, es
+                    el símbolo
+                    máximo
+                    de la <em>fe y
+                        la hospitalidad</em> brasileña, convirtiéndose en un punto de referencia que atrae a
+                    cerca
+                    de <strong>2
+                        millones de
+                        visitantes</strong> que suben a la cima para disfrutar de la mejor vista de
+                    <strong>Brasil</strong>.
+                </p>
+                <p class="maravillas">
+                    Desde su inauguración en 1931, el monumento ha sido restaurado para resistir las fuertes
+                    <em>descargas
+                        eléctricas</em> y vientos
+                    que azotan la bahía. Es una parada <strong>obligatoria</strong> e
+                    <em>imprescindible</em> para
+                    cualquier
+                    turista, ya que ofrece
+                    una perspectiva inigualable de la geografía carioca y el espíritu vibrante de una nación
+                    que
+                    celebra su
+                    <strong>patrimonio
+                        cultural</strong>.
+                </p>
+            </section>
+
+            <br>
+
+
+            <p class="maravillas">
+                Para conocer más sobre estas maravillas, visita la
+                <a
+                    href="https://viajes.nationalgeographic.com.es/lifestyle/viaje-a-nuevas-siete-maravillas-mundo-moderno_18546">
+                    página oficial de las 7 Maravillas</a>.
+            </p>
+
+            <br><br><br>
+
+            <hr>
+            <br><br><br><br>
+
+            <h2 id="otros_destinos_turisticos">II. Otros Destinos Turisticos</h2>
+            <table class="tabla">
+                <colgroup>
+                    <col style="background-color: lightblue;">
+                    <col style="background-color: rgb(255, 255, 255);">
+                    <col style="background-color: lightyellow;">
+                    <col style="background-color: rgb(255, 255, 255);">
+                </colgroup>
+                <tr>
+                <tr class="tabla_cabezal">
+                    <th colspan="2">Destino</th>
+                    <th>Descripción</th>
+                    <th>Ubicación</th>
+                </tr>
+
+                <tr>
+                    <td class="tabla_nombre">Isla de Pascua, Chile</td>
+                    <td class="tabla_nombre">
+                        <div>
+                            <img src="Imagenes_web/Isla de Pascua.png" width="180" height="130">
+                        </div>
+
+                    </td>
+                    <td class="tabla_nombre1"> <strong>El monumento ceremonial más grande de la Polinesia</strong>,
+                        con 15 moais que preservan la energía de sus ancestros y
+                        ofrecen una de las mejores vistas de la salida del sol en la isla.</td>
+                    <td class="tabla_nombre">
+
+                        <div>
+                            <img src="Imagenes_web/chile.png" width="180" height="130">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tabla_nombre">Caño Cristales, Colombia</td>
+                    <td class="tabla_nombre">
+                        <div>
+                            <img src="Imagenes_web/Caño Cristales.png" width="180" height="130">
+                        </div>
+
+                    </td>
+                    <td class="tabla_nombre1">Conocido como el <strong>"río de los cinco colores"</strong>, este río
+                        exhibe
+                        tonos
+                        vibrantes de
+                        amarillo,
+                        verde, rojo, azul y negro, creando una explosión de colores única en el mundo.
+                    </td>
+                    <td class="tabla_nombre">
+
+                        <div>
+                            <img src="Imagenes_web/colombia.png" width="180" height="130">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tabla_nombre">Parque Hitsujiyama, Japón</td>
+                    <td class="tabla_nombre">
+                        <div>
+                            <img src="Imagenes_web/Parque Hitsujiyama.png" width="180" height="130">
+                        </div>
+
+                    </td>
+                    <td class="tabla_nombre1">Un mar de flores rosa <strong>(shibazakura)</strong> que cubre las
+                        colinas,
+                        con
+                        vistas
+                        espectaculares al
+                        Monte Fuji, ideal para quienes buscan experiencias exóticas y naturales.</td>
+                    <td class="tabla_nombre">
+
+                        <div>
+                            <img src="Imagenes_web/japon.png" width="180" height="130">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tabla_nombre">Pozo de Darvaza, Turkmenistán</td>
+                    <td class="tabla_nombre">
+                        <div>
+                            <img src="Imagenes_web/Pozo de Darvaza.png" width="180" height="130">
+                        </div>
+
+                    </td>
+                    <td class="tabla_nombre1">Conocido como las <strong>"Puertas del Infierno"</strong>, este cráter
+                        de
+                        gas
+                        en
+                        llamas
+                        ha ardido
+                        desde
+                        1971 y es una de las maravillas naturales más insólitas del mundo.</td>
+                    <td class="tabla_nombre">
+
+                        <div>
+                            <img src="Imagenes_web/Turkmenistán.png" width="180" height="130">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tabla_nombre">Stonehenge, Reino Unido</td>
+                    <td class="tabla_nombre">
+                        <div>
+                            <img src="Imagenes_web/Stonehenge.png" width="180" height="130">
+                        </div>
+
+                    </td>
+                    <td class="tabla_nombre1"><strong>Un misterioso círculo de piedras de 5.000 años de
+                            antigüedad</strong>,
+                        cuya
+                        función exacta
+                        sigue siendo un enigma, pero que despierta una energía mística en quienes lo
+                        visitan.
+                    </td>
+                    <td class="tabla_nombre">
+
+                        <div>
+                            <img src="Imagenes_web/reino unido.png" width="180" height="130">
+                        </div>
+                    </td>
+                </tr>
+
+
+            </table>
+
+            <br><br><br><br>
+
+        </main>
+    </div>
+    <footer class="pie_pagina">
+        <div class="contenido_footer">
+            <p><strong>Las 7 Maravillas del Mundo</strong></p>
+            <p>Pagina web Luiggi Lenguaje de Marcas</p>
+            <p>Contacto: luiggi123456789@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script/script_web.js"></script>
+    
+</body>
+
+</html>

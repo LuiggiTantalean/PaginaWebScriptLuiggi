@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ver imagenes</title>
+        <script>
+            let imagenes=document.getElementsByTagName('img');
+            let img = 0;
+
+            function finicio(){
+                //Partimos de 1 para que la imagen en la posicion 0 sea visible
+                for(i=1; i<imagenes.length; i++){
+                imagenes[i].style.display='none';
+                }
+            }
+           
+
+            function fcambiar(){
+                imagenes[img].style.display='none';
+
+                if (img == imagenes.length - 1) {
+                    img = 0;
+                } else {
+                    img++;
+                }
+
+                imagenes[img].style.display='';
+            }
+        </script>
+    </head>
+    <body onload="finicio()">
+        <input type="button" value="cambiar" onclick="fcambiar()"/>
+        <br>
+        <img src="imagen/messi.png">
+        <img src="imagen/messi1.png">
+        <img src="imagen/messi2.png">
+    </body>
+</html> 

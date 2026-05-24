@@ -1,0 +1,561 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+.introduccion_pagina {
+    background-image: url('../Imagenes_web/fondo_introduccion.png');
+    background-size: cover;
+
+}
+
+.maravillas_pagina {
+    background-image: url('../Imagenes_web/fondo_maravillas.png');
+    background-size: cover;
+}
+
+.gastronomia_pagina {
+    background-image: url('../Imagenes_web/fondo_gastronomia.png');
+    background-size: cover;
+}
+
+.formulario_pagina {
+    background-image: url('../Imagenes_web/collage.png');
+}
+
+.maravillas {
+    font-size: 18px;
+    text-align: justify;
+    width: 95%;
+    line-height: 1.6;
+}
+
+.cabecera_principal {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu_enlaces {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.menu_enlaces a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.indice {
+    display: flex;
+    width: 1500px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.indice_lateral {
+    grid-area: aside;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #333;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.indice_lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.indice_lateral a {
+    display: block;
+    padding: 8px 0;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.indice_lateral a:hover {
+    color: green;
+}
+
+
+main {
+    grid-area: main;
+}
+
+
+.contenido_con_margen {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #333;
+}
+
+
+.img_izq {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 300px;
+    border: 2px solid #333;
+}
+
+.img_der {
+    float: right;
+    margin: 0 0 10px 20px;
+    width: 300px;
+    border: 2px solid #333;
+}
+
+
+ol.romanos {
+    list-style-type: upper-roman;
+    /* I, II */
+}
+
+ol.mayusculas {
+    list-style-type: upper-alpha;
+    /* A, B, C */
+}
+
+ol.cuadrado {
+    list-style-type: square;
+    /* ■ */
+    ;
+}
+
+.bordes_cuadros {
+    border: 1px solid #000000;
+    margin-bottom: 6px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+dd {
+    text-align: center;
+}
+
+.justificado_maravillas {
+    text-align: justify;
+    width: 780px;
+}
+
+.titulo_introduccion {
+    text-align: center;
+}
+
+.titulo_gastronomia {
+    text-align: center;
+}
+
+.definiciones {
+    font-size: 20px;
+
+}
+
+.imagen_mapa {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    Text-align: center;
+
+
+}
+
+.imagenesizq {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px rgba(19, 17, 17, 0.2);
+
+}
+
+.imagenesder {
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 15px rgba(19, 17, 17, 0.2);
+}
+
+.tabla {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+
+
+}
+
+.tabla_cabezal {
+    Font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+.tabla_nombre {
+    Font-weight: bold;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 7px;
+}
+
+.tabla_nombre1 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 7px;
+}
+
+ul.sub_lista {
+    list-style: none;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.form2 {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.fieldset2 {
+    border: 1px solid #9c9c9c;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+
+.td2 {
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="range"] {
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding: 5px;
+    width: 160px;
+}
+
+input[type="range"] {
+    accent-color: #007bff
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+div.centro {
+    text-align: center;
+}
+
+
+select {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.formulario {
+    text-align: center;
+
+}
+
+
+.imagenes_gastronomia {
+    display: grid;
+    gap: 20px;
+}
+
+
+.tarjeta_comida {
+    position: relative;
+    border: 3px solid #333;
+    border-radius: 8px;
+    height: 250px;
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.etiqueta_comida {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+
+.centro_gastronomia {
+    text-align: center;
+}
+
+.reseña_plato {
+    width: 530px;
+    margin: 10px auto 30px auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .indice {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maravillas,
+    .tarjeta_comida {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .menu_enlaces {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.pie_pagina {
+    grid-area: footer;
+    background-color: #222;
+    color: #ffffff;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 4px solid #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+
+.contenido_footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.mi-reloj-estilo {
+    font-family: monospace;
+    font-size: 20px;
+    background-color: #9bcadd;
+    color: #000000;
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.bloque-interactivo {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px dashed #666;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    color: #333;
+}
+
+.carrusel_maravillas img {
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+
+.introduccion1 {
+
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.introduccion2 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.introduccion3 {
+
+    font-family: monospace;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+
+.introduccion4 {
+
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+}
+
+
+.introduccion5 {
+    padding: px; 
+    text-align: center;
+    width: 1px;
+}
+
+.maravillas1 {
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 8px;
+
+}
+
+
+.maravillas_indice {
+
+    background-color: #f9f9f9; 
+    padding: 10px; 
+    border: 1px dashed #333; 
+    border-radius: 5px; 
+    font-size: 13px;
+}
+
+.maravillas_indice1 {
+    margin-top: 0; 
+    text-align: center; 
+    color: #222;
+}
+
+.maravillas_indice2 {
+
+    padding-left: 15px; 
+    margin: 0; 
+    list-style-type: square;
+}
+
+.gastronomia1 {
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px dashed #333;
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+
+.gastronomia2 {
+
+    margin-top: 15px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+.gastronomia3 {
+    margin-top: 12px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #b32d00;
+}
+
+
+.gastronomia_carta {
+
+    background-color: #fffaf0; 
+    padding: 10px; 
+    border: 1px dashed #b32d00; 
+    border-radius: 5px; 
+    font-size: 13px;
+}
+
+.gastronomia_carta1 {
+
+    margin-top: 0; 
+    text-align: center; 
+    color: #b32d00;
+}
+
+.gastronomia_carta2 {
+
+    padding-left: 15px; 
+    margin: 0; 
+    list-style-type: disc;
+}
+
+.inscripcion1 {
+
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.inscripcion2 {
+
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+
+}
+
+
+.carrusel_imagenes {
+    border: 2px solid #fff;
+}

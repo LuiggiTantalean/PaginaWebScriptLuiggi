@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ver imagenes</title>
+    <script>
+
+
+        function actualizarRelojIntro() {
+            let elementoReloj = document.getElementById("reloj_intro");
+            if (elementoReloj) {
+                let ahora = new Date();
+                let hora = ahora.getHours().toString().padStart(2, '0');
+                let min = ahora.getMinutes().toString().padStart(2, '0');
+                let seg = ahora.getSeconds().toString().padStart(2, '0');
+                elementoReloj.textContent = hora + ":" + min + ":" + seg;
+                setTimeout(actualizarRelojIntro, 1000);
+            }
+        }
+        window.addEventListener('load', actualizarRelojIntro);
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <div><span id="reloj_intro" class="introduccion3">00:00:00</span>
+        </div>
+</body>
+
+</html>

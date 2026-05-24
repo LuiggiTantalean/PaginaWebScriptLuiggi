@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía</title>
+    <link rel="stylesheet" href="css/1estilos.css">
+</head>
+
+<body class="gastronomia_pagina">
+    <header class="cabecera_principal">
+        <h1>Cultura Gastronómica</h1>
+        <nav class="navegacion_principal">
+            <ul class="menu_enlaces">
+                <li><a href="introduccion.html">Introducción</a></li>
+                <li><a href="maravillas.html">Maravillas</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="inscripcion.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <div class="gastronomia1">
+        <h3>Menu de Comidas</h3>
+
+        <div style="margin-bottom: 10px;">
+            <input type="text" id="input_plato_gastro" placeholder="Nombre de plato a probar" style="padding: 5px; text-align: center;">
+            <input type="button" value="Añadir al Menú" onclick="fanadirPlatoGastro()">
+            <input type="button" value="Quitar Último" onclick="feliminarPlatoGastro()">
+            <input type="button" value="Ver Lista" onclick="fvisualizarMenuGastro()">
+        </div>
+
+        <div class="gastronomia2">
+            <label>Precio estimado plato (€) : </label>
+            <input type="number" id="coste_plato" style="width: 70px;">
+            <label>  ¿Cuántas personas son? : </label>
+            <input type="number" id="personas_plato" style="width: 70px;">
+            <br><br>
+            <input type="button" value="Calcular Total" onclick="fcalcularSumaGastro()">
+        </div>
+
+        <div id="resultado_lista_gastro" class="gastronomia3"></div>
+    </div>
+
+
+    <div class="indice">
+        <aside class="indice_lateral">
+            <h3>Menú</h3>
+            <ul>
+                <li><a href="#tabla_comparativa">Gastronomía y Sabores del Mundo</a></li>
+            </ul>
+            <ul class="sub_lista">
+                <li><a href="#america">I. Platos Principales de América</a></li>
+                <ul class="sub_lista">
+                    <li><a href="#ceviche">Ceviche</a></li>
+                    <li><a href="#tacos">Tacos al Pastor</a></li>
+                    <li><a href="#feijoada">Feijoada</a></li>
+                </ul>
+            </ul>
+
+            <ul class="sub_lista">
+                <li><a href="#europa">II. Platos Principales de Europa</a></li>
+                <ul class="sub_lista">
+                    <li><a href="#paella">Paella Valenciana</a></li>
+                    <li><a href="#pizza">Pizza Napolitana</a></li>
+                    <li><a href="#pasta">Pasta Carbonara</a></li>
+                </ul>
+            </ul>
+            <br><hr><br>
+            <div class="gastronomia_carta">
+                <h4 class="gastronomia_carta1">Precios de la Carta</h4>
+                <ul class="gastronomia_carta2">
+                    <li><strong>Ceviche:</strong> 15.00 €</li>
+                    <li><strong>Tacos al Pastor:</strong> 12.00 €</li>
+                    <li><strong>Feijoada:</strong> 14.00 €</li>
+                    <li><strong>Paella Valenciana:</strong> 18.00 €</li>
+                    <li><strong>Pizza Napolitana:</strong> 11.00 €</li>
+                    <li><strong>Pasta Carbonara:</strong> 13.00 €</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="contenido_con_margen">
+            <section id="tabla_comparativa" class="seccion_bloque">
+
+                <br>
+                <h1 class="titulo_gastronomia">Gastronomía y Sabores del Mundo</h1>
+
+                <br><br>
+
+                <table class="tabla">
+                    <colgroup>
+                        <col style="background-color: rgb(145, 214, 172); width: 15%;">
+                        <col style="background-color: white; width: 45%;">
+                        <col style="background-color: #d693a4; width: 25%;">
+                        <col style="background-color: rgb(150, 163, 236); width: 15%;">
+                    </colgroup>
+
+                    <tr class="tabla_cabezal">
+                        <th>País</th>
+                        <th>Descripción y Platos</th>
+                        <th>Ingredientes Clave</th>
+                        <th>Reconocimiento</th>
+                    </tr>
+                    <tr class="tabla_fila">
+                        <td class="tabla_nombre">Italia</td>
+                        <td class="tabla_nombre1">Reina del Mediterráneo. Destaca por la simplicidad de sus recetas y la
+                            calidad
+                            de sus materias
+                            primas.</td>
+                        <td class="tabla_nombre1">
+                            <ul class="cuadrado">
+                                <li>Aceite de Oliva</li>
+                                <li>Albahaca fresca</li>
+                                <li>Queso Parmesano</li>
+                            </ul>
+                        </td>
+                        <td class="tabla_nombre">Taste Atlas #1</td>
+                    </tr>
+                    <tr class="tabla_fila">
+                        <td class="tabla_nombre">México</td>
+                        <td class="tabla_nombre1">Fusión prehispánica y española. Sus técnicas de nixtamalización son
+                            únicas en
+                            el mundo.</td>
+                        <td class="tabla_nombre1">
+                            <ul class="cuadrado">
+                                <li>Variedad de Chiles</li>
+                                <li>Maíz criollo</li>
+                                <li>Cacao</li>
+                            </ul>
+                        </td>
+                        <td class="tabla_nombre">UNESCO</td>
+                    </tr>
+                    <tr class="tabla_fila">
+                        <td class="tabla_nombre">Japón</td>
+                        <td class="tabla_nombre1">Máximo respeto por el producto de temporada. Se basa en el concepto de
+                            "Umami"
+                            (sabor sabroso).</td>
+                        <td class="tabla_nombre1">
+                            <ul class="cuadrado">
+                                <li>Pescado crudo</li>
+                                <li>Arroz de grano corto</li>
+                                <li>Soja y Wasabi</li>
+                            </ul>
+                        </td>
+                        <td class="tabla_nombre">Técnica Refinada</td>
+                    </tr>
+                    <tr class="tabla_fila">
+                        <td class="tabla_nombre">Perú</td>
+                        <td class="tabla_nombre1">Referente mundial por su biodiversidad.
+                        </td>
+                        <td class="tabla_nombre1">
+                            <ul class="cuadrado">
+                                <li>Limón</li>
+                                <li>Ají amarillo</li>
+                                <li>Cebolla morada</li>
+                            </ul>
+                        </td>
+                        <td class="tabla_nombre">Joya de América y UNESCO</td>
+                    </tr>
+                    <tr class="tabla_fila">
+                        <td class="tabla_nombre">España</td>
+                        <td class="tabla_nombre1">Famosa por su cultura de "Tapeo" y la dieta mediterránea. Líder en
+                            gastronomía
+                            molecular.</td>
+                        <td class="tabla_nombre1">
+                            <ul class="cuadrado">
+                                <li>Azafrán</li>
+                                <li>Pimentón</li>
+                                <li>Jamón Serrano</li>
+                            </ul>
+                        </td>
+                        <td class="tabla_nombre">Vanguardia</td>
+                    </tr>
+                </table>
+            </section>
+
+
+            <br><br><br><br><br>
+
+            <hr>
+            <br><br><br>
+
+
+            <section id="america" class="centro_gastronomia">
+                <h2>Gastronomía Americana</h2>
+                <br><br>
+                <div class="imagenes_gastronomia">
+
+                    <div class="tarjeta_comida">
+                        <img src="Imagenes_web/ceviche.png" alt="Ceviche" width="530" height="250">
+                        <div class="etiqueta_comida" id="ceviche">Ceviche - Perú</div>
+                    </div>
+                    <p class="reseña_plato">Considerado Patrimonio Cultural de la Nación, es el plato bandera de Perú.
+                        Se basa en trozos de pescado fresco marinados en jugo de limón ácido,
+                        acompañados de cebolla roja, ají limo, cilantro y sal. Su frescura se
+                        equilibra perfectamente con el dulzor del camote y el crujiente del maíz
+                        tostado (cancha).
+                    </p>
+                    <br>
+
+                    <div class="tarjeta_comida">
+                        <img src="Imagenes_web/tacos.png" alt="Tacos" width="530" height="250">
+                        <div class="etiqueta_comida" id="tacos">Tacos al Pastor - México</div>
+                    </div>
+                    <p class="reseña_plato">Uno de los grandes tesoros de la cocina callejera mexicana. Consiste en
+                        finas rebanadas de carne
+                        de cerdo adobada en una mezcla de chiles y especias, cocinada tradicionalmente en un "trompo" al
+                        fuego. Se sirven en tortillas de maíz con piña, cebolla, cilantro y una buena salsa picante.
+                    </p>
+                    <br>
+
+                    <div class="tarjeta_comida">
+                        <img src="Imagenes_web/feijoada.png" alt="Feijoada" width="530" height="250">
+                        <div class="etiqueta_comida" id="feijoada">Feijoada - Brasil</div>
+                    </div>
+                    <p class="reseña_plato">Es el guiso nacional de Brasil, con raíces profundas en la historia del
+                        país. Se elabora a base
+                        de frijoles negros cocidos a fuego lento con una variedad de carnes de cerdo y embutidos. Se
+                        sirve tradicionalmente con arroz blanco, harina de mandioca tostada (farofa), naranjas frescas y
+                        col picada.
+                    </p>
+                    <br>
+
+
+                </div>
+            </section>
+
+            <br>
+
+            <hr>
+            <br><br><br><br>
+
+            <section id="europa" class="centro_gastronomia">
+                <h2>Gastronomía Europea</h2>
+                <br><br>
+                <div class="imagenes_gastronomia">
+
+                    <div class="tarjeta_comida">
+                        <img src="Imagenes_web/paella.png" alt="Paella" width="530" height="250">
+                        <div class="etiqueta_comida" id="paella">Paella Valenciana - España</div>
+                    </div>
+                    <p class="reseña_plato">Originaria de la región de Valencia, es el plato más icónico de la cocina
+                        española. Se cocina en
+                        una sartén ancha y plana (paellera) sobre fuego de leña. El arroz se impregna del sabor del
+                        azafrán, el conejo, el pollo y las judías verdes, creando una capa crujiente en el fondo llamada
+                        "socarrat".</p>
+                    <br>
+
+                    <div class="tarjeta_comida">
+                        <img src="Imagenes_web/pizza.png" alt="Pizza" width="530" height="250">
+                        <div class="etiqueta_comida" id="pizza">Pizza Napolitana - Italia</div>
+                    </div>
+                    <p class="reseña_plato">Declarada Patrimonio de la Humanidad por la UNESCO, la auténtica pizza de
+                        Nápoles destaca por su
+                        sencillez y calidad. Su masa es elástica y suave con bordes altos (cornicione), cubierta con
+                        tomates de San Marzano, mozzarella de búfala, albahaca fresca y aceite de oliva virgen extra.
+                    </p>
+                    <br>
+
+                    <div class="tarjeta_comida">
+                        <img src="Imagenes_web/pasta.png" alt="Pasta" width="530" height="250">
+                        <div class="etiqueta_comida" id="pasta">Pasta Carbonara - Italia</div>
+                    </div>
+                    <p class="reseña_plato">Un clásico romano que destaca por su técnica. La salsa original no lleva
+                        nata (crema de leche);
+                        se crea emulsionando yemas de huevo frescas, queso Pecorino Romano, pimienta negra y el toque
+                        crujiente del guanciale (papada de cerdo). Es la definición de cremosidad y sabor intenso.</p>
+                    <br>
+                </div>
+            </section>
+            <br><br>
+        </main>
+    </div>
+    <footer class="pie_pagina">
+        <div class="contenido_footer">
+            <p><strong>Gastronomía del Mundo 2026</strong></p>
+            <p>Pagina web Luiggi Lenguaje de Marcas</p>
+            <p>Contacto: luiggi123456789@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script/script_web.js"></script>
+
+</body>
+
+</html>
